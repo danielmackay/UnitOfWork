@@ -54,3 +54,9 @@ using (var uow = UnitOfWork.Begin())
 Project structure
 -----------------
 The project contains two nuget packages *UnitOfWork* and *UnitOfWork.Test*.  Each nuget package contains two projects.  One for the actual package, and a *target* which can be used to test and consume the package.
+
+NuGet Packages
+--------------
+The following packages can be installed to get this code via Nuget:
+* UnitOfWork
+* UnitOfWork.Test
