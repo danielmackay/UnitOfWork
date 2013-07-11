@@ -20,7 +20,7 @@ namespace Uow.Test.Package.Content.Utilities
                  if (db.Database.Exists())
                      db.Database.Delete();
 
-                 db.Database.Create();
+                 db.Database.Initialize(true);
              }
          }
     }
