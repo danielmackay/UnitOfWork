@@ -1,0 +1,1 @@
+nuget pack UnitOfWork.Test.Package.nuspec -Exclude bin\**;obj\**;Properties\**;*.config;*csproj*;*.bat -version %1%

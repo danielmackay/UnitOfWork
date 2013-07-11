@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWork.Package", "UnitOfWork.Package\UnitOfWork.Package.csproj", "{50DCEFFC-39FE-49A0-AE80-1B55738E6760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWork.Target", "UnitOfWork.Target\UnitOfWork.Target.csproj", "{D69DB2F5-74B8-4EB4-A2FE-A7535FDD2446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWork.Test.Package", "UnitOfWork.Test.Package\UnitOfWork.Test.Package.csproj", "{DF03E295-111F-4C40-A51B-A31BC74864DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitOfWork.Test.Target", "UnitOfWork.Test.Target\UnitOfWork.Test.Target.csproj", "{555C32B9-7D07-4E0D-A7E3-65F1EEDD38D6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://danielmackay.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UnitOfWork.Package\\UnitOfWork.Package.csproj
+		SccProjectName1 = UnitOfWork.Package
+		SccLocalPath1 = UnitOfWork.Package
+		SccProjectUniqueName2 = UnitOfWork.Target\\UnitOfWork.Target.csproj
+		SccProjectName2 = UnitOfWork.Target
+		SccLocalPath2 = UnitOfWork.Target
+		SccProjectUniqueName3 = UnitOfWork.Test.Package\\UnitOfWork.Test.Package.csproj
+		SccProjectName3 = UnitOfWork.Test.Package
+		SccLocalPath3 = UnitOfWork.Test.Package
+		SccProjectUniqueName4 = UnitOfWork.Test.Target\\UnitOfWork.Test.Target.csproj
+		SccProjectName4 = UnitOfWork.Test.Target
+		SccLocalPath4 = UnitOfWork.Test.Target
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50DCEFFC-39FE-49A0-AE80-1B55738E6760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50DCEFFC-39FE-49A0-AE80-1B55738E6760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50DCEFFC-39FE-49A0-AE80-1B55738E6760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50DCEFFC-39FE-49A0-AE80-1B55738E6760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69DB2F5-74B8-4EB4-A2FE-A7535FDD2446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69DB2F5-74B8-4EB4-A2FE-A7535FDD2446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69DB2F5-74B8-4EB4-A2FE-A7535FDD2446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69DB2F5-74B8-4EB4-A2FE-A7535FDD2446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF03E295-111F-4C40-A51B-A31BC74864DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF03E295-111F-4C40-A51B-A31BC74864DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF03E295-111F-4C40-A51B-A31BC74864DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF03E295-111F-4C40-A51B-A31BC74864DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555C32B9-7D07-4E0D-A7E3-65F1EEDD38D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555C32B9-7D07-4E0D-A7E3-65F1EEDD38D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555C32B9-7D07-4E0D-A7E3-65F1EEDD38D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555C32B9-7D07-4E0D-A7E3-65F1EEDD38D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

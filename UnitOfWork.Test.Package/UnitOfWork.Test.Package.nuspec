@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>UnitOfWork.Test</id>
+    <version>0.1</version>
+    <authors>Daniel Mackay</authors>
+    <owners>Daniel Mackay</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Provides a starter kit for unit testing UOW/Repositories with EF.  Compliments the UnitOfWork package.
+    </description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>UOW, Unit Of Work, EF, Entity Framework, Repository, Code First, IoC, Mocking, Unit Test, Fluent Assertions, NSubstitute</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="EntityFramework" version="5.0.0" />
+        <dependency id="Unity" version="2.1.505.2" />
+        <dependency id="NSubstitute" version="1.6.0.0" />
+        <dependency id="FluentAssertions" version="2.0.1" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
