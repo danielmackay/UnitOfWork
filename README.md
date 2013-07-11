@@ -16,7 +16,7 @@ Logic Unit Testing
 ------------------
 With complex entities it can become a complicated and involved task to set up data structures in your DB for tests to work.  In these cases it's easier to mock out the DB and hard code some entites for your tests to use.  This can be done with a mocking framework (like NSubstitute) and and IoC container.  For example:
 
-```csharp  
+```csharp
 var mock = Substitute.For<IUnitOfWork>();  
 mock.Customers.GetByName("").ReturnsForAnyArgs(GetCustomers());  
 DataContainer.RegisterInstance(mock);
@@ -29,7 +29,27 @@ ORM
 ---
 Entity Framework Code First is used as the ORM.  This can be changed by re-implementing your repositories to use any other ORM or even stored procedures!
 
+Automatic timestamping  entities is implemented for anything that is created or modified.  For this to work your entities just need to inherit from *Entity*.
 
+Repository
+----------
+The purpose of the repository is to wrap whatever data access technology you are using.  The repository should also contain your LINQ queries so that these can be reused by different parts of your business logic.
+
+You can use the generic repository to quickly get basic CRUD functionality working or you can extend this like the *CustomerRepository* does to add more functionality.
+
+Unit Of Work
+------------
+The purpose of the UOW is to provide transactions across operations on multiple repositories.  That means that if you add/modifiy/delete entites across multiple repositories, either all the operations will succeed, or none of them will.
+
+A UOW should be used in the following way:
+```csharp
+using (var uow = UnitOfWork.Begin())
+{
+  // Put your code here...
+}
+```
+
+*Begin()* is a factory method for creating a UOW.  This allows us to swap out a real UOW for a mock UOW during our tests.
 
 Project structure
 -----------------
